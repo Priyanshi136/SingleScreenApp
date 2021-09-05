@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/retail"
+        app:layout_constraintTop_toBottomOf="@id/heading" />
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F57F17"
+        android:drawableRight="@drawable/rsz"
+        android:fontFamily="cursive"
+        android:gravity="center_horizontal"
+        android:text="Baba Store, Napasar"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="29dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="8dp"
+        android:text="5.0"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        tools:ignore="MissingConstraints" />
+
+    <RatingBar
+        style="@style/Widget.AppCompat.RatingBar.Indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:numStars="5"
+        android:rating="5"
+        app:layout_constraintLeft_toRightOf="@id/rate"
+        app:layout_constraintTop_toBottomOf="@id/image" />
+
+    <TextView
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/location"
+        android:padding="8dp"
+        android:text="Main Bazar, Napasar, Bikaner, Rajasthan, 334201"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="15dp"
+        app:layout_constraintTop_toBottomOf="@id/rate"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/con"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/phone"
+        android:paddingLeft="16dp"
+        android:paddingBottom="8dp"
+        android:text="  1234567890"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="17dp"
+        app:layout_constraintTop_toBottomOf="@id/add"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/timing"
+        android:paddingLeft="16dp"
+        android:paddingBottom="8dp"
+        android:text="   Open   ->  09:00(Every day) \n   Closes -> 21:00(Every day)"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="15dp"
+        app:layout_constraintTop_toBottomOf="@id/con"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:text="About"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/time"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:paddingLeft="20dp"
+        android:text="Hey, lovely people's, our store provides all grocery
+products and in addition to it our workers behaviour is so calm and passive.
+And you will not get any difficulty while shopping in our store. We are so
+overwhemled to have you on our store. We never dissatisfied you. Hope you
+enjoy. Thank you!"
+        android:textSize="13dp"
+        app:layout_constraintTop_toBottomOf="@id/head"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/tick"
+        android:padding="6dp"
+        android:text="In-store shopping"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@id/des"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/tick"
+        android:padding="6dp"
+        android:text="Delivery"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        app:layout_constraintLeft_toRightOf="@id/first"
+        app:layout_constraintTop_toBottomOf="@id/des" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
